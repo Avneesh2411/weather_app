@@ -17,6 +17,7 @@
         }
 
         .container {
+            width: 90%;
             max-width: 500px;
             margin: 50px auto;
             background-color: #fff;
@@ -67,15 +68,32 @@
             margin-bottom: 5px;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         .history-item button {
             margin-left: 10px;
         }
-        #weather img {
-            width: 60px;
-            height: 60px;
-            margin-left: 10px;
+
+        /* Media queries for responsive design */
+        @media screen and (max-width: 500px) {
+            input[type="text"] {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            #weather {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
